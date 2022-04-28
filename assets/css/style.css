@@ -1,0 +1,34 @@
+section {
+    width: 50vw;
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px;
+    gap: 30px;
+    margin: auto;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.box {
+    position: relative;
+}
+
+.box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    visibility: hidden;
+}
+
+.box:hover>div {
+    height: 100%;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.3);
+    transition: .8s;
+}
